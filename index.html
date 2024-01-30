@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img src="image/logo.png">
+          <h2>Arycodes</h2>
+        </div></div>
+      <div class="box">
+        <h1>Arycodes is the best dynamic QR code generator</h1>
+          <p>Enter your destination</p>
+          <form action="">
+              <input type="text" id="link" placeholder="Enter your website URL" required>
+          </form>
+      </div>
+      <div class="main">
+          <div class="image">
+            <div id="canvas"></div>
+           <p>500 X 500px</p>
+          </div>
+          <div class="qr-code-design">
+            <h2>Customize your QR code</h2>
+              <div class="size">
+                <h3>Size:</h3>
+                <input type="range" value="50" min="1" max="50" id="size">
+              </div>
+              <div class="pattern">
+                  <h3>Pattern</h3>
+                  <select name="pattern" id="pattern">
+                    <option value="square">Square</option>
+                    <option value="dots">Dots</option>
+                    <option value="rounded">Rounded</option>
+                    <option value="extra-rounded">Extra Rounded</option>
+                    <option value="classy">Classy</option>
+                    <option value="classy-rounded">Classy Rounded</option>
+                  </select>
+              </div>
+              <div class="color">
+                  <h3>Color</h3>
+                  <div class="col">
+                    <input type="color"  id="color1">
+                    <input type="color"  id="color2">
+                  </div>
+              </div>
+              <div class="bgcolor">
+                <h3>Background-color:</h3>
+                <input type="color"  id="bgcolor">
+            </div>
+            <div class="pic">
+              <h3>Logo:</h3>
+              <input type="file" id="logo" hidden>
+              <div><a href="javascript:browse();"><img src="image/camera.png" alt="" id="img"></a></div>
+              <div>
+                  <button id="clear" type="button">Clear</button>
+              </div>
+            </div>
+             
+              <div class="margin">
+                <h3>Margin:</h3>
+                <input type="range" value="0" min="1" max="30" id="margin"></div>
+              <div class="download-share">
+                <button type="button" id="down">Download Code</button>
+            </div>
+          </div>
+      </div>
+      <div class="footer">
+          <p>&copy; 2024 Arycodes. All rights reserved.</p>
+      </div>
+  </div>
+</body>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
