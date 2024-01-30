@@ -9,8 +9,8 @@ const bgcolor = document.querySelector('#bgcolor');
 const download = document.querySelector("#down");
 const del = document.querySelector("#clear");
 let op={
-    width: 500,
-    height: 500,
+    width: 300,
+    height: 300,
     type: "jpg",
     data: "https://arycodes.in/",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mozilla_Firefox_Nightly_logo_2013.png/640px-Mozilla_Firefox_Nightly_logo_2013.png",
